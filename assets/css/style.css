@@ -107,10 +107,16 @@ li {
   Header styling starts here
 =================================*/
 
+header .wrapper{
+  text-align: center;
+  background-color: #2b2e37;
+}
 
-
-
-
+header p{
+  color: #ffffff;
+  font-size: 30px;
+  padding: 10px 0;
+}
 
 /*=================================
   Header styling ends here
@@ -119,31 +125,78 @@ li {
 /*=================================
   main styling starts here
 =================================*/
+main .wrapper{ width: 70%; }
+.hide-me{ display: none; }
 
+.video-list{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
+.video-item{
+  width: 30%;
+  margin: 20px 1%;
+  position: relative;
+}
 
+.video-item:hover::after{
+  font-size: 40px;
+  color: #fafafa;
+  transform: all 0.5s;
+}
 
+.video-item::after{
+  content: "\f144";
+  font-family: FontAwesome;
+  font-size: 35px;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: all 0.5s;
+}
 
+.modal{
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  background-color: rgba( 50,50,50,0.7);
+  z-index: 1;
+}
 
+.modal-video{
+  margin: auto;
+  width: 90%;
+  max-width: 700px;
+  margin-top: 50vh;
+  transform: translateY(-50%);
+  box-shadow: 1px 1px 3px #ffffff;
+}
 
+.close{
+  color: #ffffff;
+  font-size: 35px;
+  position: fixed;
+  top : -50px;
+  left: 0;
+}
+
+.close::after{
+  text-indent: 0;
+  content: "\f057";
+  font-family: FontAwesome;
+  position: absolute;
+  top: 70px;
+  left: 30px;
+  cursor: pointer;
+}
 
 /*=================================
   main styling ends here
 =================================*/
-
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
-
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
 
 /*media query starts*/
 /*media query for 995px starts here*/
