@@ -168,12 +168,16 @@ main .wrapper{ width: 70%; }
 }
 
 .modal-video{
-  margin: auto;
-  width: 90%;
-  max-width: 700px;
+  display: inline-block;
+  max-width: 90%;
   margin-top: 50vh;
-  transform: translateY(-50%);
-  box-shadow: 1px 1px 3px #ffffff;
+  margin-left: 50vw;
+  transform: translate(-50%, -50%);
+}
+
+.modal-video iframe{ 
+  width: 100%;
+  max-width: 500px;
 }
 
 .close{
