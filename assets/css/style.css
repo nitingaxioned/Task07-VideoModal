@@ -198,6 +198,9 @@ main .wrapper{ width: 70%; }
   cursor: pointer;
 }
 
+video{ width: 100%; }
+video:focus{ outline: none; }
+
 /*=================================
   main styling ends here
 =================================*/
